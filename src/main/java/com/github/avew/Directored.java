@@ -20,7 +20,6 @@ public class Directored {
                     return createFile(tmpPath, newDir, fileName);
                 }
             } catch (FileSystemException e) {
-
                 if (!file.delete()) {
                     // wait a bit then retry on Windows
                     if (file.exists()) {
